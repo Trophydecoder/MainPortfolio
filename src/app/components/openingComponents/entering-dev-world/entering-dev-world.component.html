@@ -1,0 +1,25 @@
+<div class="ContainerForAll" @typingAnimation>
+    <div class="SectionIcon">
+        <img [src]="words0" alt="Leader World" id="LeadersWorld"/>
+    </div>
+  
+    <div class="SectionFound">
+      <p>
+        <span class="word"  *ngFor="let word of words1">{{word}}&nbsp;</span>
+      </p>
+  
+      <div class="SectionWorld">
+        <p>
+          <span class="word" *ngFor="let word of words2">{{word}}&nbsp;</span>
+        </p>
+      </div>
+  
+      <div class="SectionEnter">
+        <p>
+          <span class="word" *ngFor="let word of words3">{{word}}&nbsp;</span>
+        </p>
+        <button class="word" id="enterWorld" (click)="enterWorld()">Enter My World</button>
+      </div>
+    </div>
+  </div>
+  
