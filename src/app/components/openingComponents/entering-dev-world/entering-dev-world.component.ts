@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-entering-dev-world',
@@ -16,12 +17,16 @@ import { trigger, transition, style, animate, query, stagger } from '@angular/an
   ]
 })
 export class EnteringDevWorldComponent {
+
+
+  constructor(private router: Router) {}
+
   words0 = '/assets/LeaderWorld.png'
   words1 = 'You Found Me'.split(' ');
   words2 = 'This world was not meant to be discovered'.split(' ');
   words3 = 'Do you dare to enter ?'.split(' ');
 
   enterWorld() {
-    alert('Welcome to your world!');
+    this.router.navigate(['myworld']);
   }
 }

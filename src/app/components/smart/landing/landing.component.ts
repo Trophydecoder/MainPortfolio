@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
-import { EnteringDevWorldComponent } from "../../openingComponents/entering-dev-world/entering-dev-world.component";
+import { CommonModule } from '@angular/common';
+import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-landing',
-  imports: [EnteringDevWorldComponent],
+  imports: [],
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss'
+  styleUrl: './landing.component.scss',
+  animations: [
+    trigger('typingAnimation', [
+      transition(':enter', [
+        query('.word', [style({ opacity: 0, transform: 'translateY(20px)' }),
+          stagger(500, [animate('800ms ease-out',style({ opacity: 1, transform: 'translateY(0)' }))
+          ])])])])
+        ]
 })
 export class LandingComponent {
 
