@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
     trigger('typingAnimation', [
       transition(':enter', [
         query('.word', [style({ opacity: 0, transform: 'translateY(20px)' }),
-          stagger(500, [animate('800ms ease-out',style({ opacity: 1, transform: 'translateY(0)' }))
+          stagger(800, [animate('800ms ease-out',style({ opacity: 1, transform: 'translateY(0)' }))
           ])])])])
         ]
 })

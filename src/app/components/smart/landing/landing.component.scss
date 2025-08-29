@@ -7,28 +7,48 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family:var(--MainFont);
 }
 .sectionfortext{
-    color: white;
     display: flex;
     justify-content: center;
     align-items:center;
 }
 .text h1{
-    font-family: "TASA Orbiter", sans-serif;
+    color:var(--TextMain);
     font-size: 35px;
     padding-left: 5%;
 }
 .text p{
     margin-top: -4%;
-    font-family: "TASA Orbiter", sans-serif;
-    font-style: italic;
     font-size: 16px;
     padding-left: 5%; 
+    border: none;
+    color:var(--TextP);
 }
 #CV{
+   background-color:var(--MainColor);
    margin-left: 5%; 
    padding: 15px 17px;
    border-radius: 9px;
-
+   border: none;
+}
+@media screen and (min-width: 1024px) {
+    .containerforall{
+        background-image:url('/assets/Landingbackground.png');
+        height: 100vh;
+    }
+    .sectionfortext{
+        width: 80%;
+        justify-content: start;
+        align-items:center;
+    }
+    .text h1{
+        font-size: 85px;
+    }
+    .text p{
+        margin-top: -5%;
+        font-size: 18px;
+ 
+    }
 }

@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  sidebarWidth = 0;
 
+
+  openLSide() {
+    this.sidebarWidth = 60; // adjust the width as needed
+  }
+
+  closeLSide() {
+    this.sidebarWidth = 0;
+  }
 }

@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<div class="ContainerNavbar">
+    <div class="logocontainer">
+
+        <img src='/assets/sithembisologo.png' alt="steadfast" id="logoIMG">
+    </div>
+    <div class="barcontainer">
+        <div class="bars">
+            <i class="fa fa-bars" style="font-size:34px" (click)="openLSide()"></i>
+            <div class="Sidebar">
+            <div class="navbar-slide" [style.width]="sidebarWidth + '%'">
+                <i class="fa fa-remove" style="font-size:20px"  (click)=" closeLSide()"></i>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Contact Us</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="DesktopNav">
+        <div class="Desktop">
+            <a href="#carousel">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </div>
