@@ -11,7 +11,7 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
         query('.box', [
           style({ opacity: 0, transform: 'translateY(20px)' }),
           stagger(200, [
-            animate('10000ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+            animate('15000ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
           ])
         ])
       ])

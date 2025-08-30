@@ -12,7 +12,7 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
         query('.fade-in', [
           style({ opacity: 0, transform: 'translateY(30px)' }),
           stagger(200, [
-            animate('10000ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+            animate('12000ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
           ])
         ], { optional: true })
       ])

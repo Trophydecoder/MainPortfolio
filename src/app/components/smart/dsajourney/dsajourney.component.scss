@@ -1,0 +1,156 @@
+.ContainerForAll{
+    background-color:black;
+    padding-top: 10%;
+  }
+
+.SectionforDSA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--MainFont);
+  }
+
+  .Section{
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a6c);
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .SectionforImageDSA {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageDSA {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #DSAImage {
+    width: 230px;
+    border-radius:15px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+  }
+  
+  #DSAImage:hover {
+    transform: scale(1.07) rotate(-2deg);
+  }
+  
+  .MyDSAStory {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+  
+  .MyDSAStory h1 {
+    font-size: 2.30rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+    color: var(--TextMain);
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .MyDSAStory h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--MainColor);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .MyDSAStory p {
+    color: var(--TextP);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    max-width: 650px;
+  }
+  
+  .highlight {
+    color: var(--MainColor);
+    font-weight: 600;
+  }
+  
+
+  .linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0a66c2;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 6px 20px rgba(10, 102, 194, 0.4);
+  }
+  
+  .linkedin-btn:hover {
+    background: #004182;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 24px rgba(10, 102, 194, 0.6);
+  }
+  
+  .linkedin-btn i {
+    font-size: 1.2rem;
+  }  
+  /* Responsive */
+  @media screen and (min-width: 1024px) {
+    .ContainerForAll{
+        background-color:black;
+        padding-top: 8%;
+      }
+
+   .Section{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 3rem;
+    }
+    .SectionforDSA{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .SectionforImageDSA {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+
+      }
+    #DSAImage {
+      width: 400px;
+    }
+  
+    .MyDSAStory {
+      text-align: left;
+  
+    }
+  
+    .MyDSAStory p {
+      font-size: 16px;
+    }
+  }
+  
