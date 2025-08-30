@@ -1,0 +1,154 @@
+.ContainerForAll {
+    width: 100%;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a6c);
+    height: 100%;
+    background-color: black;
+    font-family: var(--MainFont);
+    padding: 4% 0;
+  }
+  
+
+  .SectionforAboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+
+  .SectionforImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #Aboutme {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+  }
+  
+  #Aboutme:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  .MyStory {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+  
+  .MyStory h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--TextMain);
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+
+  .MyStory h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: var(--MainColor);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .MyStory p {
+    color: var(--TextP);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    max-width: 600px;
+  }
+  
+
+  .languages {
+    margin-top: 2rem;
+  }
+  
+  .languages h2 {
+    color: var(--TextMain);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .languages h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--MainColor);
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+  
+
+  .lang-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  
+  .lang {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--MainColor);
+    color: var(--TextMain);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+  
+  .lang:hover {
+    background: var(--MainColor);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+//Responsive 
+  @media screen and (min-width: 1024px) {
+    .SectionforImage {
+      flex-direction: row;
+      width: 80%;
+    }
+    
+  
+    #Aboutme {
+      width: 450px;
+    }
+  
+    .MyStory {
+      text-align: left;
+      padding-left: 3rem;
+    }
+    .MyStory p {
+        color: var(--TextP);
+        font-size: 16px;
+        margin-top: -2%;
+     
+      }
+  }
+  

@@ -2,15 +2,18 @@
     width: 100%;
     background-color:black;
     font-family:var(--MainFont);
-    height: 100%;
+    min-height: 100%;
 }
 .SectionForMyjourney{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+   height: 130vh;
 }
-.Myjoruney{
+
+.Myjourney{
+    border-radius: 9px;
     margin-top: -4%;
     padding: 3%;
     width: 80%;
@@ -18,9 +21,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgba(80, 80, 80, 0); 
-    -webkit-backdrop-filter: blur(15px);    
-    backdrop-filter: blur(17px);  
+    background: rgba(255, 255, 255, 0.034); 
+    -webkit-backdrop-filter: blur(50px);    
+    backdrop-filter: blur(30px);  
     border: none;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -74,13 +77,16 @@
 
 @media screen and (min-width:1024px){
     .ContainerforSection{
-        height: 45vh;
+        height: 50vh;
     }
-    .Myjoruney{
+    .Myjourney{
         width: 80%;
         flex-direction: row;
         border-radius: 18px;
     
+    }
+    .SectionForMyjourney{
+        height:100%;
     }
     .boxes1,.boxes2,.boxes3,.boxes4{
         width: 25%;     
