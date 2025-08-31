@@ -28,4 +28,7 @@ export class NavbarComponent {
   Home(){
     this.router.navigate(['myworld']);
   }
+  Projects(){
+    this.router.navigate(['myprojects']);
+  }
 }
