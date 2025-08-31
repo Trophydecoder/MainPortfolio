@@ -3,10 +3,10 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
 
 
 @Component({
-  selector: 'app-dsajourney',
+  selector: 'app-oci-journey',
   imports: [],
-  templateUrl: './dsajourney.component.html',
-  styleUrl: './dsajourney.component.scss',
+  templateUrl: './oci-journey.component.html',
+  styleUrl: './oci-journey.component.scss',
   animations: [
     trigger('scrollAnimation', [
       transition('* => *', [
@@ -22,6 +22,6 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
     ])
   ]
 })
-export class DSAjourneyComponent {
+export class OciJourneyComponent {
 
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+
+  constructor(private router: Router) {}
   sidebarWidth = 0;
 
 
@@ -16,5 +19,13 @@ export class NavbarComponent {
 
   closeLSide() {
     this.sidebarWidth = 0;
+  }
+
+
+  Aboutme(){
+    this.router.navigate(['aboutme']);
+  }
+  Home(){
+    this.router.navigate(['myworld']);
   }
 }

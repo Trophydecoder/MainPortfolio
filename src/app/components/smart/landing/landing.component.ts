@@ -19,4 +19,10 @@ import { Router } from '@angular/router';
 })
 export class LandingComponent {
 
+  downloadCV() {
+    const link = document.createElement('a');
+    link.href ='assets/CV.pdf';
+    link.download = 'Sithembiso Mdawe_CV.pdf';
+    link.click();
+  }
 }

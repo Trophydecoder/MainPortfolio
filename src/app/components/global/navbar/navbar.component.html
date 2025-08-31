@@ -1,27 +1,32 @@
 <div class="ContainerNavbar">
     <div class="logocontainer">
-
-        <img src='/assets/sithembisologo.png' alt="steadfast" id="logoIMG">
+      <img src='/assets/sithembisologo.png' alt="steadfast" id="logoIMG">
     </div>
+  
+    <!-- Mobile Hamburger -->
     <div class="barcontainer">
-        <div class="bars">
-            <i class="fa fa-bars" style="font-size:34px" (click)="openLSide()"></i>
-            <div class="Sidebar">
-            <div class="navbar-slide" [style.width]="sidebarWidth + '%'">
-                <i class="fa fa-remove" style="font-size:20px"  (click)=" closeLSide()"></i>
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Services</a>
-                <a href="">Contact Us</a>
-            </div>
-            </div>
+      <div class="bars">
+        <i class="fa fa-bars" style="font-size:28px" (click)="openLSide()"></i>
+        <div class="Sidebar">
+          <div class="navbar-slide" [style.width]="sidebarWidth + '%'">
+            <i class="fa fa-remove" style="font-size:24px" (click)="closeLSide()"></i>
+            <a routerLink="/home" (click)="Home()" (click)="closeLSide()">Home</a>
+            <a routerLink='/aboutme' (click)="Aboutme()" (click)="closeLSide()">About Me</a>
+            <a routerLink="/projects" (click)="closeLSide()">Projects</a>
+            <a routerLink="/contact" (click)="closeLSide()">Contact Me</a>
+          </div>
         </div>
+      </div>
     </div>
+  
+    <!-- Desktop Navigation -->
     <div class="DesktopNav">
-        <div class="Desktop">
-            <a href="#carousel">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact Us</a>
-        </div>
+      <div class="Desktop">
+        <a routerLink="/home"(click)="Home()"> Home</a>
+        <a routerLink='/aboutme' (click)="Aboutme()">About Me</a>
+        <a routerLink="/projects">Projects</a>
+        <a routerLink="/contact">Contact Me</a>
+      </div>
     </div>
+  </div>
+  

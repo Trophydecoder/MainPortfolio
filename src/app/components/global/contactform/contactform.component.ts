@@ -3,10 +3,10 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
 
 
 @Component({
-  selector: 'app-dsajourney',
+  selector: 'app-contactform',
   imports: [],
-  templateUrl: './dsajourney.component.html',
-  styleUrl: './dsajourney.component.scss',
+  templateUrl: './contactform.component.html',
+  styleUrl: './contactform.component.scss',
   animations: [
     trigger('scrollAnimation', [
       transition('* => *', [
@@ -22,6 +22,6 @@ import { trigger, style, transition, animate, query, stagger } from '@angular/an
     ])
   ]
 })
-export class DSAjourneyComponent {
+export class ContactformComponent {
 
 }

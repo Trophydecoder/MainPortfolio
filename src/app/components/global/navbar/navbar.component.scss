@@ -121,13 +121,9 @@
       color: rgb(255, 255, 255);
       font-weight: 500;
       transition: all 0.8s ease;  /* applies to hover in AND out */
+      cursor:pointer;
   }
   
-  .Desktop a:hover {
-    padding: 19px 20px;
-    color: black;
-    border-radius: 9px;
-  }
   
   }
   
