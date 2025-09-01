@@ -31,4 +31,7 @@ export class NavbarComponent {
   Projects(){
     this.router.navigate(['myprojects']);
   }
+  contact(){
+    this.router.navigate(['contactme']);
+  }
 }
