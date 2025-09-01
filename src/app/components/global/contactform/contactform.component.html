@@ -24,18 +24,12 @@
             </div>
           </div>
   
-          <!-- Right Side Form -->
-          <div class="FormContact fade-in">
-            <form class="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit" class="send-btn">
-                <i class="fa fa-share-square"></i> Send Message
-              </button>
-            </form>
-          </div>
-  
+          <form     class="contact-form"  #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm.value)">
+            <input type="text" name="name" ngModel placeholder="Your Name" required>
+            <input type="email" name="email" ngModel placeholder="Your Email" required>
+            <textarea name="message" ngModel placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send</button>
+          </form>    
         </div>
       </div>
     </div>

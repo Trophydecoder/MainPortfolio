@@ -1,6 +1,6 @@
 <div class="ContainerNavbar">
     <div class="logocontainer">
-      <img src='/assets/sithembisologo.png' alt="steadfast" id="logoIMG">
+      <img src='/assets/sithembisologo.png' (click)="Home()"  alt="steadfast" id="logoIMG">
     </div>
   
     <!-- Mobile Hamburger -->
@@ -10,6 +10,7 @@
         <div class="Sidebar">
           <div class="navbar-slide" [style.width]="sidebarWidth + '%'">
             <i class="fa fa-remove" style="font-size:24px" (click)="closeLSide()"></i>
+            <img src='/assets/sithembisologo.png'  (click)="Home()"  alt="steadfast" id="logoIMG">
             <a routerLink="" (click)="Home()" (click)="closeLSide()">Home</a>
             <a routerLink='' (click)="Aboutme()" (click)="closeLSide()">About Me</a>
             <a routerLink="" (click)="Projects()" (click)="closeLSide()">Projects</a>

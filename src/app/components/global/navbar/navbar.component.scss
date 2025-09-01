@@ -22,6 +22,8 @@
   
   #logoIMG {
     width: 70%;
+    cursor:pointer;
+
   }
   
   .barcontainer {
@@ -45,12 +47,14 @@
   }
   
   .bars:hover {
-    background-color: #e6b800; /* slightly darker on hover */
+    background-color:var(--MainColor);
+    color:white;
   }
    .fa-remove {
    width: 90%;
    justify-content: end;
    display: flex;
+   color:white;
   }
   /* Sidebar */
   .navbar-slide {
@@ -70,7 +74,7 @@
   .navbar-slide a {
     padding: 15px 20px;
     text-decoration: none;
-    color: var(--textprimary);
+    color:white;
     font-weight: bold;
     font-family: poppins, sans-serif;
     transition: background 0.3s;
@@ -78,7 +82,7 @@
   
   .navbar-slide a:hover {
 
-    color: rgb(0, 0, 0);
+    color:white;
   }
   
   /* Desktop */

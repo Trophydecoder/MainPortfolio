@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
 import { Router } from '@angular/router';
-
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-landing',
@@ -18,11 +18,8 @@ import { Router } from '@angular/router';
         ]
 })
 export class LandingComponent {
-
   downloadCV() {
-    const link = document.createElement('a');
-    link.href ='assets/CV.pdf';
-    link.download = 'Sithembiso Mdawe_CV.pdf';
-    link.click();
+    const url = 'https://drive.google.com/file/d/1KlTvYO37fHWbdzW2SQafomqY-DXtRaMP/view?usp=drive_link'; 
+    window.open(url, '_blank'); 
   }
 }
